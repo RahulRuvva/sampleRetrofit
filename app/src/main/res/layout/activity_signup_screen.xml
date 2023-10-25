@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_signup"
+    android:padding="22dp"
+    tools:context=".signupScreen"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/sign_up"
+        android:text="Welcome to Registration"
+        android:textSize="26sp"
+        android:textColor="#02162D"
+        android:ellipsize="end"
+       android:singleLine="true" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_up"
+        android:hint="Enter your Email"
+        android:layout_margin="8dp"
+        android:backgroundTint="#FFFFFF">
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="8dp"
+
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutEmail"
+        android:layout_margin="8dp"
+        android:hint="Enter your Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="8dp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutPassword"
+        android:layout_margin="8dp"
+        android:hint="Date of Birth">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_calendar"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutDob"
+        android:layout_margin="8dp"
+        android:hint="Enter your Phone Number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_phone"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RadioLayout"
+        android:layout_below="@+id/layoutPhoneNumber"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="18sp"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="18sp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioLayout"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="SignUp"
+        android:textSize="24dp"
+        android:padding="3dp"
+        android:background="#05274E"
+        android:onClick="onSignupButtonClick"
+        android:id="@+id/signup"/>
+
+
+</LinearLayout>

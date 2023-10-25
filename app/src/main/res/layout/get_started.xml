@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#061162"
+    android:gravity="bottom"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="28sp"
+        android:layout_margin="15dp"
+        android:text="Healthcare in Your Pocket"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/sign_up"
+        android:layout_margin="10dp"
+        android:background="@drawable/sharp_background_button"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="26sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/login_btn"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="26sp"
+        android:layout_margin="15dp"
+        android:background="@drawable/sharp_background_button"/>
+
+
+</LinearLayout>
