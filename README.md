@@ -1,1 +1,1 @@
-This is a Read me file created now
+This is a read file
